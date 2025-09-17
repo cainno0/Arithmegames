@@ -31,7 +31,7 @@ jobs:
           use_preset_export_path: true
 
       - name: Upload exported HTML5 build as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: html5-build
           path: ${{ steps.export.outputs.archive_directory }}/*
